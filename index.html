@@ -103,6 +103,7 @@
             transition: transform 0.25s ease, box-shadow 0.25s ease;
             overflow: hidden;
             animation: appear 0.8s ease;
+            cursor: pointer;
         }
 
         .link::before {
@@ -250,11 +251,11 @@
 
             </a>
 
+
             <!-- TikTok -->
             <a class="link"
                href="https://www.tiktok.com/@aliyoussef1307"
-               target="_blank"
-               rel="noopener noreferrer">
+               onclick="openTikTok(event)">
 
                 <div class="number">02</div>
 
@@ -268,11 +269,11 @@
 
             </a>
 
-            <!-- Coffee -->
+
+            <!-- Coffee / Instagram -->
             <a class="link"
                href="https://www.instagram.com/ons_coffe1"
-               target="_blank"
-               rel="noopener noreferrer">
+               onclick="openInstagram(event)">
 
                 <div class="number">03</div>
 
@@ -281,6 +282,7 @@
                 <div class="coffee-icon">☕</div>
 
             </a>
+
 
             <!-- LinkedIn -->
             <a class="link"
@@ -303,13 +305,46 @@
         </div>
 
         <div class="footer">
-           Helping people UnderStand Life & Relationships 
-<br>
+            Helping people UnderStand Life & Relationships
+            <br>
             ALI YOUSSEF
         </div>
 
     </main>
 
+
+    <script>
+
+        function openTikTok(event) {
+
+            event.preventDefault();
+
+            const appLink = "tiktok://@aliyoussef1307";
+            const webLink = "https://www.tiktok.com/@aliyoussef1307";
+
+            window.location.href = appLink;
+
+            setTimeout(function () {
+                window.location.href = webLink;
+            }, 1200);
+        }
+
+
+        function openInstagram(event) {
+
+            event.preventDefault();
+
+            const appLink = "instagram://user?username=ons_coffe1";
+            const webLink = "https://www.instagram.com/ons_coffe1";
+
+            window.location.href = appLink;
+
+            setTimeout(function () {
+                window.location.href = webLink;
+            }, 1200);
+        }
+
+    </script>
+
 </body>
 </html>
-
