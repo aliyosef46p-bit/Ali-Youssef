@@ -10,7 +10,6 @@
     <title>ALI YOUSSEF</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -27,12 +26,17 @@
 
         body {
             min-height: 100vh;
+
             font-family: "Cairo", sans-serif;
+
             background: #f3ebe2;
+
             color: #352017;
 
             display: flex;
+
             justify-content: center;
+
             align-items: center;
 
             padding: 30px 18px;
@@ -41,13 +45,16 @@
 
         .page {
             width: 100%;
+
             max-width: 480px;
+
             text-align: center;
         }
 
 
         .profile-image {
             width: 105px;
+
             height: 105px;
 
             margin: 0 auto 22px;
@@ -59,7 +66,9 @@
             border: 4px solid #5a3828;
 
             display: flex;
+
             justify-content: center;
+
             align-items: center;
 
             overflow: hidden;
@@ -72,7 +81,9 @@
 
         .profile-image img {
             width: 100%;
+
             height: 100%;
+
             object-fit: cover;
         }
 
@@ -215,6 +226,7 @@
             z-index: 2;
 
             width: 31px;
+
             height: 31px;
 
             border-radius: 50%;
@@ -243,6 +255,7 @@
             z-index: 2;
 
             width: 25px;
+
             height: 25px;
 
             display: flex;
@@ -255,6 +268,7 @@
 
         .social-icon svg {
             width: 23px;
+
             height: 23px;
 
             fill: #5a3828;
@@ -464,6 +478,7 @@
 
             .profile-image {
                 width: 95px;
+
                 height: 95px;
             }
 
@@ -513,21 +528,15 @@
         </div>
 
 
-        <!-- NAME -->
-
         <div class="name">
             ALI YOUSSEF
         </div>
 
 
-        <!-- TITLE -->
-
         <h1>
             سيبها في دماغك شوية
         </h1>
 
-
-        <!-- SUBTITLE -->
 
         <p class="subtitle">
             Find me everywhere
@@ -550,11 +559,9 @@
                     01
                 </div>
 
-
                 <span>
                     ALI YOUSSEF Youtube Channel
                 </span>
-
 
                 <div class="social-icon">
 
@@ -573,19 +580,17 @@
 
             <a
                 class="link"
-                href="javascript:void(0)"
-                onclick="openTikTok()"
+                href="#"
+                onclick="openTikTok(event)"
             >
 
                 <div class="number">
                     02
                 </div>
 
-
                 <span>
                     ALI YOUSSEF Tiktok ACC
                 </span>
-
 
                 <div class="social-icon">
 
@@ -600,23 +605,21 @@
             </a>
 
 
-            <!-- INSTAGRAM / COFFEE -->
+            <!-- INSTAGRAM -->
 
             <a
                 class="link"
-                href="javascript:void(0)"
-                onclick="openInstagram()"
+                href="#"
+                onclick="openInstagram(event)"
             >
 
                 <div class="number">
                     03
                 </div>
 
-
                 <span>
                     اطلب قهوتك ( ŌNS Coffe | أُنس )
                 </span>
-
 
                 <div class="coffee-icon">
                     ☕
@@ -638,11 +641,9 @@
                     04
                 </div>
 
-
                 <span>
                     LinkedIn
                 </span>
-
 
                 <div class="social-icon">
 
@@ -660,8 +661,6 @@
         </div>
 
 
-        <!-- FOOTER -->
-
         <div class="footer">
 
             Helping people UnderStand Life & Relationships
@@ -677,7 +676,7 @@
 
 
 
-    <!-- APP POPUP -->
+    <!-- POPUP -->
 
     <div
         class="popup"
@@ -686,11 +685,9 @@
 
         <div class="popup-box">
 
-
             <h2 id="popupTitle">
                 فتح التطبيق
             </h2>
-
 
             <p id="popupText">
                 اختار الطريقة اللي عايز تفتح بيها الحساب.
@@ -701,6 +698,7 @@
                 id="appButton"
                 class="app-button"
                 href="#"
+                onclick="openApp(event)"
             >
                 فتح التطبيق
             </a>
@@ -724,7 +722,6 @@
                 إغلاق
             </button>
 
-
         </div>
 
     </div>
@@ -734,43 +731,60 @@
     <script>
 
 
-        /* TIKTOK */
+        let currentApp = "";
 
-        function openTikTok() {
+
+        /*
+        فتح TikTok
+        */
+
+        function openTikTok(event) {
+
+            event.preventDefault();
+
+            currentApp = "tiktok";
+
 
             document.getElementById("popupTitle").textContent =
                 "TikTok";
 
+
             document.getElementById("popupText").textContent =
                 "اضغط على «فتح التطبيق» لفتح حساب ALI YOUSSEF على TikTok.";
 
-            document.getElementById("appButton").href =
-                "tiktok://@aliyoussef1307";
 
             document.getElementById("webButton").href =
                 "https://www.tiktok.com/@aliyoussef1307";
 
+
             document.getElementById("appPopup").classList.add("show");
 
         }
 
 
 
-        /* INSTAGRAM */
+        /*
+        فتح Instagram
+        */
 
-        function openInstagram() {
+        function openInstagram(event) {
+
+            event.preventDefault();
+
+            currentApp = "instagram";
+
 
             document.getElementById("popupTitle").textContent =
                 "Instagram";
 
+
             document.getElementById("popupText").textContent =
                 "اضغط على «فتح التطبيق» لفتح حساب ŌNS Coffe على Instagram.";
 
-            document.getElementById("appButton").href =
-                "instagram://user?username=ons_coffe1";
 
             document.getElementById("webButton").href =
                 "https://www.instagram.com/ons_coffe1";
+
 
             document.getElementById("appPopup").classList.add("show");
 
@@ -778,31 +792,145 @@
 
 
 
-        /* CLOSE POPUP */
+        /*
+        فتح التطبيق حسب نوع الجهاز
+        */
 
-        function closePopup() {
+        function openApp(event) {
 
-            document.getElementById("appPopup").classList.remove("show");
+            event.preventDefault();
+
+
+            const isAndroid =
+                /Android/i.test(navigator.userAgent);
+
+
+            const isIOS =
+                /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+
+            let appUrl = "";
+
+
+            /*
+            ANDROID
+            */
+
+            if (isAndroid) {
+
+                if (currentApp === "tiktok") {
+
+                    appUrl =
+                        "intent://www.tiktok.com/@aliyoussef1307#Intent;scheme=https;package=com.zhiliaoapp.musically;end";
+
+                }
+
+                else if (currentApp === "instagram") {
+
+                    appUrl =
+                        "intent://www.instagram.com/ons_coffe1#Intent;scheme=https;package=com.instagram.android;end";
+
+                }
+
+            }
+
+
+            /*
+            iPHONE / iPAD
+            */
+
+            else if (isIOS) {
+
+                if (currentApp === "tiktok") {
+
+                    appUrl =
+                        "tiktok://user?username=aliyoussef1307";
+
+                }
+
+                else if (currentApp === "instagram") {
+
+                    appUrl =
+                        "instagram://user?username=ons_coffe1";
+
+                }
+
+            }
+
+
+            /*
+            لو الجهاز غير معروف
+            */
+
+            else {
+
+                if (currentApp === "tiktok") {
+
+                    window.location.href =
+                        "https://www.tiktok.com/@aliyoussef1307";
+
+                    return;
+
+                }
+
+                if (currentApp === "instagram") {
+
+                    window.location.href =
+                        "https://www.instagram.com/ons_coffe1";
+
+                    return;
+
+                }
+
+            }
+
+
+            /*
+            محاولة فتح التطبيق
+            */
+
+            if (appUrl !== "") {
+
+                window.location.href = appUrl;
+
+            }
 
         }
 
 
 
-        /* CLOSE WHEN CLICKING OUTSIDE */
+        /*
+        إغلاق النافذة
+        */
 
-        document.getElementById("appPopup").addEventListener(
-            "click",
-            function(event) {
+        function closePopup() {
 
-                if (event.target === this) {
+            document
+                .getElementById("appPopup")
+                .classList.remove("show");
 
-                    closePopup();
+        }
+
+
+
+        /*
+        الضغط خارج النافذة
+        */
+
+        document
+            .getElementById("appPopup")
+            .addEventListener(
+                "click",
+                function(event) {
+
+                    if (event.target === this) {
+
+                        closePopup();
+
+                    }
 
                 }
-
-            }
-        );
-
+            );
 
     </script>
 
