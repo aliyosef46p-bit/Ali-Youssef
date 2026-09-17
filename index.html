@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ALI YOUSSEF</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: "Cairo", sans-serif;
+            background: #f3ebe2;
+            color: #352017;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 18px;
+        }
+
+        .page {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 105px;
+            height: 105px;
+            margin: 0 auto 22px;
+            border-radius: 50%;
+            background: #d8c2b0;
+            border: 4px solid #5a3828;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            animation: appear 0.7s ease;
+            box-shadow: 0 12px 30px rgba(90, 56, 40, 0.18);
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .name {
+            font-family: Arial, sans-serif;
+            font-size: 29px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            color: #5a3828;
+            margin-bottom: 6px;
+            animation: appear 0.8s ease;
+        }
+
+        h1 {
+            font-size: 27px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #42281c;
+            animation: appear 0.9s ease;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #866653;
+            margin-bottom: 32px;
+            animation: appear 1s ease;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .link {
+            position: relative;
+            min-height: 66px;
+            background: #fffaf5;
+            border: 1px solid #d7c0ad;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #543425;
+            font-size: 15px;
+            font-weight: 700;
+            box-shadow: 0 8px 25px rgba(84, 52, 37, 0.09);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            overflow: hidden;
+            animation: appear 0.8s ease;
+        }
+
+        .link::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: #e4d1c0;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+            z-index: 0;
+        }
+
+        .link:hover::before {
+            transform: translateX(0);
+        }
+
+        .link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 32px rgba(84, 52, 37, 0.17);
+        }
+
+        .link span {
+            position: relative;
+            z-index: 1;
+        }
+
+        .number {
+            position: absolute;
+            right: 18px;
+            z-index: 2;
+            width: 31px;
+            height: 31px;
+            border-radius: 50%;
+            background: #5a3828;
+            color: #fffaf5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .social-icon {
+            position: absolute;
+            left: 18px;
+            z-index: 2;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-icon svg {
+            width: 23px;
+            height: 23px;
+            fill: #5a3828;
+        }
+
+        .coffee-icon {
+            position: absolute;
+            left: 18px;
+            z-index: 2;
+            font-size: 21px;
+        }
+
+        .footer {
+            margin-top: 28px;
+            font-size: 12px;
+            color: #947968;
+            animation: appear 1.2s ease;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 25px 16px;
+            }
+
+            .profile-image {
+                width: 95px;
+                height: 95px;
+            }
+
+            .name {
+                font-size: 24px;
+                letter-spacing: 3px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .link {
+                min-height: 62px;
+                border-radius: 16px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="page">
+
+        <div class="profile-image">
+            <img src="WhatsApp Image 2026-09-17 at 6.13.23 PM.jpeg" alt="ALI YOUSSEF">
+        </div>
+
+        <div class="name">ALI YOUSSEF</div>
+
+        <h1>سيبها في دماغك شوية</h1>
+
+        <p class="subtitle">Find me everywhere</p>
+
+        <div class="links">
+
+            <!-- YouTube -->
+            <a class="link"
+               href="https://www.youtube.com/@Aliyoussef0713"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                <div class="number">01</div>
+
+                <span>ALI YOUSSEF Youtube Channel</span>
+
+                <div class="social-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.5v-7l6.3 3.5-6.3 3.5z"/>
+                    </svg>
+                </div>
+
+            </a>
+
+            <!-- TikTok -->
+            <a class="link"
+               href="https://www.tiktok.com/@aliyoussef1307"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                <div class="number">02</div>
+
+                <span>ALI YOUSSEF Tiktok ACC</span>
+
+                <div class="social-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M19.6 7.1a5.9 5.9 0 0 1-3.5-1.1v7.4a5.6 5.6 0 1 1-4.8-5.5v3a2.6 2.6 0 1 0 1.8 2.5V0h3a5.9 5.9 0 0 0 3.5 4.1v3z"/>
+                    </svg>
+                </div>
+
+            </a>
+
+            <!-- Coffee -->
+            <a class="link"
+               href="https://www.instagram.com/ons_coffe1?stkn=MWpud21qYWI2ODR1OQ=="
+               target="_blank"
+               rel="noopener noreferrer">
+
+                <div class="number">03</div>
+
+                <span>اطلب قهوتك ( ŌNS Coffe | أُنس )</span>
+
+                <div class="coffee-icon">☕</div>
+
+            </a>
+
+            <!-- LinkedIn -->
+            <a class="link"
+               href="https://www.linkedin.com/in/ali-hassanen-344696203"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                <div class="number">04</div>
+
+                <span>LinkedIn</span>
+
+                <div class="social-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M20.4 3H3.6A1.6 1.6 0 0 0 2 4.6v14.8A1.6 1.6 0 0 0 3.6 21h16.8a1.6 1.6 0 0 0 1.6-1.6V4.6A1.6 1.6 0 0 0 20.4 3zM8 18H5V9h3v9zM6.5 7.8A1.8 1.8 0 1 1 6.5 4a1.8 1.8 0 0 1 0 3.8zM19 18h-3v-4.7c0-1.1 0-2.5-1.6-2.5s-1.8 1.2-1.8 2.4V18h-3V9h2.9v1.2h.1c.4-.8 1.4-1.6 2.9-1.6 3.1 0 3.5 2 3.5 4.6V18z"/>
+                    </svg>
+                </div>
+
+            </a>
+
+        </div>
+
+        <div class="footer">
+           Helping people UnderStand Life & Relationships 
+<br>
+            ALI YOUSSEF
+        </div>
+
+    </main>
+
+</body>
+</html>
+
