@@ -10,6 +10,7 @@
     <title>ALI YOUSSEF</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -297,144 +298,6 @@
         }
 
 
-        /* POPUP */
-
-        .popup {
-            display: none;
-
-            position: fixed;
-
-            inset: 0;
-
-            background: rgba(53, 32, 23, 0.55);
-
-            z-index: 9999;
-
-            align-items: center;
-
-            justify-content: center;
-
-            padding: 20px;
-        }
-
-
-        .popup.show {
-            display: flex;
-        }
-
-
-        .popup-box {
-            width: 100%;
-
-            max-width: 360px;
-
-            background: #fffaf5;
-
-            border-radius: 22px;
-
-            padding: 28px 22px;
-
-            text-align: center;
-
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
-
-            animation: popupAppear 0.25s ease;
-        }
-
-
-        .popup-box h2 {
-            color: #42281c;
-
-            font-size: 21px;
-
-            margin-bottom: 10px;
-        }
-
-
-        .popup-box p {
-            color: #866653;
-
-            font-size: 13px;
-
-            line-height: 1.8;
-
-            margin-bottom: 20px;
-        }
-
-
-        .app-button {
-            display: block;
-
-            width: 100%;
-
-            padding: 13px;
-
-            border: none;
-
-            border-radius: 14px;
-
-            background: #5a3828;
-
-            color: #fffaf5;
-
-            text-decoration: none;
-
-            font-family: "Cairo", sans-serif;
-
-            font-size: 14px;
-
-            font-weight: 700;
-
-            margin-bottom: 10px;
-
-            cursor: pointer;
-        }
-
-
-        .web-button {
-            display: block;
-
-            width: 100%;
-
-            padding: 13px;
-
-            border-radius: 14px;
-
-            border: 1px solid #d7c0ad;
-
-            background: transparent;
-
-            color: #5a3828;
-
-            text-decoration: none;
-
-            font-family: "Cairo", sans-serif;
-
-            font-size: 14px;
-
-            font-weight: 700;
-
-            cursor: pointer;
-        }
-
-
-        .close-button {
-            margin-top: 15px;
-
-            border: none;
-
-            background: none;
-
-            color: #947968;
-
-            font-family: "Cairo", sans-serif;
-
-            cursor: pointer;
-
-            font-size: 12px;
-        }
-
-
         @keyframes appear {
 
             from {
@@ -447,23 +310,6 @@
                 opacity: 1;
 
                 transform: translateY(0);
-            }
-
-        }
-
-
-        @keyframes popupAppear {
-
-            from {
-                opacity: 0;
-
-                transform: scale(0.95);
-            }
-
-            to {
-                opacity: 1;
-
-                transform: scale(1);
             }
 
         }
@@ -528,15 +374,21 @@
         </div>
 
 
+        <!-- NAME -->
+
         <div class="name">
             ALI YOUSSEF
         </div>
 
 
+        <!-- TITLE -->
+
         <h1>
             سيبها في دماغك شوية
         </h1>
 
+
+        <!-- SUBTITLE -->
 
         <p class="subtitle">
             Find me everywhere
@@ -559,9 +411,11 @@
                     01
                 </div>
 
+
                 <span>
                     ALI YOUSSEF Youtube Channel
                 </span>
+
 
                 <div class="social-icon">
 
@@ -580,17 +434,20 @@
 
             <a
                 class="link"
-                href="#"
-                onclick="openTikTok(event)"
+                href="https://www.openlinkinapp.com/o/s/WyJodHRwczovL3d3dy50aWt0b2suY29tL0BhbGl5b3Vzc2VmMTMwNyIsbnVsbF0.1a15aa9aeb5394ab37b224d21c14ffee"
+                target="_blank"
+                rel="noopener noreferrer"
             >
 
                 <div class="number">
                     02
                 </div>
 
+
                 <span>
                     ALI YOUSSEF Tiktok ACC
                 </span>
+
 
                 <div class="social-icon">
 
@@ -605,21 +462,24 @@
             </a>
 
 
-            <!-- INSTAGRAM -->
+            <!-- INSTAGRAM / COFFEE -->
 
             <a
                 class="link"
-                href="#"
-                onclick="openInstagram(event)"
+                href="https://www.openlinkinapp.com/o/s/WyJodHRwczovL3d3dy5pbnN0YWdyYW0uY29tL29uc19jb2ZmZTEiLG51bGxd.44f40982cc5a8f9a2546ebcf7e826c6d"
+                target="_blank"
+                rel="noopener noreferrer"
             >
 
                 <div class="number">
                     03
                 </div>
 
+
                 <span>
                     اطلب قهوتك ( ŌNS Coffe | أُنس )
                 </span>
+
 
                 <div class="coffee-icon">
                     ☕
@@ -641,15 +501,17 @@
                     04
                 </div>
 
+
                 <span>
                     LinkedIn
                 </span>
+
 
                 <div class="social-icon">
 
                     <svg viewBox="0 0 24 24">
 
-                        <path d="M20.4 3H3.6A1.6 1.6 0 0 0 2 4.6v14.8A1.6 1.6 0 0 0 3.6 21h16.8a1.6 1.6 0 0 0 1.6-1.6V4.6A1.6 1.6 0 0 0 20.4 3zM8 18H5V9h3v9zM6.5 7.8A1.8 1.8 0 1 1 6.5 4a1.8 1.8 0 0 1 0 3.8zM19 18h-3v-4.7c0-1.1 0-2.5-1.6-2.5s-1.8 1.2-1.8 2.4V18h-3V9h2.9v1.2h.1c.4-.8 1.4-1.6 2.9-1.6 3.1 0 3.5 2 3.5 4.6V18z"/>
+                        <path d="M20.4 3H3.6A1.6 1.6 0 0 0 2 4.6v14.8A1.6 1.6 0 0 0 3.6 21h16.8a1.6 1.6 0 0 0 1.6-1.6V4.6A1.6 1.6 0 0 0 20.4 3zM8 18H5V9h3v9zM6.5 7.8A1.8 1.8 0 1 1 6.5 4a1.8 1.8 0 0 1 0 3.8zM19 18h-3v4.7c0-1.1 0-2.5-1.6-2.5s-1.8 1.2-1.8 2.4V18h-3V9h2.9v1.2h.1c.4-.8 1.4-1.6 2.9-1.6 3.1 0 3.5 2 3.5 4.6V18z"/>
 
                     </svg>
 
@@ -660,6 +522,8 @@
 
         </div>
 
+
+        <!-- FOOTER -->
 
         <div class="footer">
 
@@ -673,266 +537,6 @@
 
 
     </main>
-
-
-
-    <!-- POPUP -->
-
-    <div
-        class="popup"
-        id="appPopup"
-    >
-
-        <div class="popup-box">
-
-            <h2 id="popupTitle">
-                فتح التطبيق
-            </h2>
-
-            <p id="popupText">
-                اختار الطريقة اللي عايز تفتح بيها الحساب.
-            </p>
-
-
-            <a
-                id="appButton"
-                class="app-button"
-                href="#"
-                onclick="openApp(event)"
-            >
-                فتح التطبيق
-            </a>
-
-
-            <a
-                id="webButton"
-                class="web-button"
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                فتح من المتصفح
-            </a>
-
-
-            <button
-                class="close-button"
-                onclick="closePopup()"
-            >
-                إغلاق
-            </button>
-
-        </div>
-
-    </div>
-
-
-
-    <script>
-
-
-        let currentApp = "";
-
-
-        /*
-        فتح TikTok
-        */
-
-        function openTikTok(event) {
-
-            event.preventDefault();
-
-            currentApp = "tiktok";
-
-
-            document.getElementById("popupTitle").textContent =
-                "TikTok";
-
-
-            document.getElementById("popupText").textContent =
-                "اضغط على «فتح التطبيق» لفتح حساب ALI YOUSSEF على TikTok.";
-
-
-            document.getElementById("webButton").href =
-                "https://www.tiktok.com/@aliyoussef1307";
-
-
-            document.getElementById("appPopup").classList.add("show");
-
-        }
-
-
-
-        /*
-        فتح Instagram
-        */
-
-        function openInstagram(event) {
-
-            event.preventDefault();
-
-            currentApp = "instagram";
-
-
-            document.getElementById("popupTitle").textContent =
-                "Instagram";
-
-
-            document.getElementById("popupText").textContent =
-                "اضغط على «فتح التطبيق» لفتح حساب ŌNS Coffe على Instagram.";
-
-
-            document.getElementById("webButton").href =
-                "https://www.instagram.com/ons_coffe1";
-
-
-            document.getElementById("appPopup").classList.add("show");
-
-        }
-
-
-
-        /*
-        فتح التطبيق حسب نوع الجهاز
-        */
-
-        function openApp(event) {
-
-            event.preventDefault();
-
-
-            const isAndroid =
-                /Android/i.test(navigator.userAgent);
-
-
-            const isIOS =
-                /iPhone|iPad|iPod/i.test(navigator.userAgent);
-
-
-            let appUrl = "";
-
-
-            /*
-            ANDROID
-            */
-
-            if (isAndroid) {
-
-                if (currentApp === "tiktok") {
-
-                    appUrl =
-                        "intent://www.tiktok.com/@aliyoussef1307#Intent;scheme=https;package=com.zhiliaoapp.musically;end";
-
-                }
-
-                else if (currentApp === "instagram") {
-
-                    appUrl =
-                        "intent://www.instagram.com/ons_coffe1#Intent;scheme=https;package=com.instagram.android;end";
-
-                }
-
-            }
-
-
-            /*
-            iPHONE / iPAD
-            */
-
-            else if (isIOS) {
-
-                if (currentApp === "tiktok") {
-
-                    appUrl =
-                        "tiktok://user?username=aliyoussef1307";
-
-                }
-
-                else if (currentApp === "instagram") {
-
-                    appUrl =
-                        "instagram://user?username=ons_coffe1";
-
-                }
-
-            }
-
-
-            /*
-            لو الجهاز غير معروف
-            */
-
-            else {
-
-                if (currentApp === "tiktok") {
-
-                    window.location.href =
-                        "https://www.tiktok.com/@aliyoussef1307";
-
-                    return;
-
-                }
-
-                if (currentApp === "instagram") {
-
-                    window.location.href =
-                        "https://www.instagram.com/ons_coffe1";
-
-                    return;
-
-                }
-
-            }
-
-
-            /*
-            محاولة فتح التطبيق
-            */
-
-            if (appUrl !== "") {
-
-                window.location.href = appUrl;
-
-            }
-
-        }
-
-
-
-        /*
-        إغلاق النافذة
-        */
-
-        function closePopup() {
-
-            document
-                .getElementById("appPopup")
-                .classList.remove("show");
-
-        }
-
-
-
-        /*
-        الضغط خارج النافذة
-        */
-
-        document
-            .getElementById("appPopup")
-            .addEventListener(
-                "click",
-                function(event) {
-
-                    if (event.target === this) {
-
-                        closePopup();
-
-                    }
-
-                }
-            );
-
-    </script>
 
 
 </body>
